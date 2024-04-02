@@ -1,6 +1,11 @@
 package db
 
-import "github.com/AlineConchetta/myapi/API-PostgreSQL/configs"
+import ("database.sql"
+"fmt"
+
+"github.com/AlineConchetta/myapi/API-PostgreSQL/configs"
+_ "github.com/lib/pq"
+)
 
 func OpenConnection(+ sql.DB, error) {
 	conf := configs.GetDB()
